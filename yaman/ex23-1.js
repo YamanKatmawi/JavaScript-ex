@@ -171,5 +171,110 @@ const hacking = str => {
   let result = hackedArr.join("");
   return result;
 };
-let codeStr = "Hi i am nice oie";
+let codeStr = "Hi i am nice oies";
 console.log(hacking(codeStr));
+
+///////
+// Is it Symmetrical? Create a function that takes a number as an argument and returns true or false depending on whether the number is symmetrical or not.
+//  NB(Nota Bene: used to mark something as particularly important): A number is symmetrical when it is the same as its reverse.
+// Examples:
+// isSymmetrical(7227) ➞ true
+// isSymmetrical(12567) ➞ false
+// isSymmetrical(44444444) ➞ true
+// isSymmetrical(9939) ➞ false
+// isSymmetrical(1112111) ➞ true
+function isSymmetrical(num) {
+  let numToStr = num.toString();
+  let result = numToStr
+    .split("")
+    .reverse()
+    .join("");
+  if (numToStr == result) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isSymmetrical(33233));
+console.log(isSymmetrical(1234556));
+console.log(isSymmetrical(1));
+////
+// snake_case ➞ camelCase Create a function toCamelCase() that takes a single string in snake_case and converts it into camelCase.
+// Examples:
+// toCamelCase(“hello_world”) ➞ “helloWorld”
+// toCamelCase(“javascript_is_fun”) ➞ “javaScriptIsFun”
+
+const toCamelCase = str => {
+  let splitStr = str.split("_"); ////لماذا وضعنا خط من تحت
+  let camelArray = [];
+  for (let i = 0; i < splitStr.length; i++) {
+    let firstChr, restStr;
+    if (splitStr[i] == splitStr[0]) {
+      /////لماذا وضعنا صفر
+      camelArray.push(splitStr[0]);
+      continue; ////لماذا وضعنا continue
+    } else {
+      firstChr = splitStr[i].slice(0, 1);
+      restStr = splitStr[i].slice(1, splitStr[i].length);
+    }
+    let newWord = firstChr.toUpperCase() + restStr;
+    camelArray.push(newWord);
+  }
+  let result = camelArray.join("");
+  return result;
+};
+console.log(toCamelCase("snack_log_hi"));
+console.log(toCamelCase("snak_hi_go"));
+//////
+// Pig Latin Translation. Create a function that takes a string of words and moves the first letter of each word to the end of it,
+// then adds ‘ay’ to the end of the word. This is a basic form of “Pig Latin”.
+// Move the first letter of each word to the end of the word.
+// Add “ay” to the end of the word.
+// Words starting with a vowel (A, E, I, O, U) append “way” to the end instead.
+// Preserve proper capitalization as in the examples below.
+// Examples:
+// pigLatin(“Cats are great pets.“) ➞ “Atscay areway reatgay etspay.”
+// pigLatin(“Tom got a small piece of pie.“) ➞ “Omtay otgay away allsmay iecepay ofway iepay.”
+// pigLatin(“He told us a very exciting tale.“) ➞ “Ehay oldtay usway away eryvay excitingway aletay.”
+
+// const TextMv = str => {
+//   let strMov = str.split("");
+//   let strArray = [];
+//   let toBig = strMov[0](0).toUpperCase();
+//   for (i = 0; i < strMov.length; i++) {
+//     if (toBig[i] == toBig[0]) {
+//       strMov[i] = "ay";
+//       strArray.push(strMov[i]);
+//     } else if (strMov[i] == "E") {
+//     }
+//   }
+//   let result = strArray.join("");
+//   return result;
+// };
+// let joker = "cats are great pets";
+// console.log(TextMv(joker));
+////////////////////////////////////////////////////////////////////////////
+function pigLatin(str) {
+  let Translation = [];
+  let lowerCase = str.toLowerCase();
+  let splitStr = str.split(" ");
+  //   const vowels = ["a", "e", "o", "i", "u"];
+  for (let i = 0; i < splitStr.length; i++) {
+    let firstChr = splitStr[i][0];
+    let remainder = splitStr[i].slice(1, splitStr[i].length);
+    // if (vowels.includes(firstChr.toUpperCase()))
+    //  let firstChrVal =(i ? firstChr : firstChr.toUpperCase()) + restOfStr +'way';
+    //     } else {
+    //         if ( i ==0){
+    //             let firstChrRan = restOfStr[0];
+    //             let restOfRan =restOfStr.slice(1, restOfStr.length);
+    //             restOfStr= firstChrRan.toUpperCase() + firstChrRan;
+    // }
+    const newString = remainder + firstChr + "ay";
+    Translation.push(newString);
+  }
+  let result = Translation.join("");
+  return result;
+}
+const strpig = "are is the way";
+console.log(pigLatin(strpig));
