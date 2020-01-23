@@ -170,3 +170,18 @@ Amplify(3);
 Amplify("Hallo");
 Amplify(25);
 Amplify(0);
+//////
+const amp = num => {
+  let result = [];
+  let ampByTen = 0;
+  for (let i = 1; i <= num; i++) {
+    if (i % 4 == 0) {
+      ampByTen = i * 10;
+      result.push(ampByTen);
+    } else {
+      result.push(i);
+    }
+  }
+  return result;
+};
+console.log(amp(24));
