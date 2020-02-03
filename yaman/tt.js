@@ -79,15 +79,5 @@ function nameOfTheWeekEasyVersion(num) {
 }
 console.log(nameOfTheWeekEasyVersion(5));
 
-// function nameOfThatMonthEasyVersion(num) {
-//     let result = "";
-//     let nueNum = num - 1;
-//     if (num >= 1 && num <= 12) {
-//       result = monthName[nueNum];
-//     } else {
-//       result = "Sorry It is not a month";
-//       return result;
-//     }
-//     return result;
-//   }
-//   console.log(nameOfThatMonthEasyVersion(1));
+/////
+

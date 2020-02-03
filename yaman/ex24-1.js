@@ -124,3 +124,5 @@ function taken(str) {
 console.log(taken(5556666));
 console.log(taken(7));
 console.log(taken(88));
+/////
+
