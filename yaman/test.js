@@ -13,22 +13,23 @@
 function isWaldoHere(waldo) {
   let name1 = "waldo";
 
-  if (waldo === isWaldoHere) {
+  if (name1 === isWaldoHere) {
     return "false";
-  } else if (waldo === isWaldoHere) {
+  } else if (name1 === isWaldoHere) {
     return "true";
-  } else if (waldo === isWaldoHere) {
+  } else if (name1 === isWaldoHere) {
     return "false";
-  } else if (waldo === isWaldoHere) {
+  } else if (name1 === isWaldoHere) {
     return "true";
   } else {
     return;
   }
 }
-console.log(isWaldoHere());
---------------------function isWaldoHere(Waldo) {
-  return Object.keys(Waldo).length == 0;
-};
+console.log(isWaldoHere);
+//--------------------
+function isWaldoHere() {
+  return Object.keys(waldohgjhgjhghjghj).length == 0;
+}
 console.log(isWaldoHere({}));
 isWaldoHere({});
 // //////////
@@ -50,6 +51,7 @@ function isPrime(number) {
     return false;
   }
 }
+number % 3 === 0;
 console.log(isPrime(7));
 console.log(isPrime(9));
 console.log(isPrime(10));

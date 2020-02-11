@@ -202,3 +202,65 @@ function isEmpty(obj) {
 }
 console.log(isEmpty({}));
 isEmpty({ 1: 333 });
+//
+//Free Shipping. Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50.
+Examples: // @@ -137,28 +169,69 @@ freeShipping({ "Surround Sound Equipment": 499.99 }) ➞ true
+// freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }) ➞ false
+console.log("ex 4");
+function freeShipping(obj) {
+  let values = Object.values(obj);
+  //console.log(values);
+  let result = 0;
+  for (let i = 0; i < values.length; i++) {
+    result += values[i];
+  }
+  return result > 50;
+}
+console.log(freeShipping({ Sponge: 3.5, Soap: 5.99 }));
+console.log(freeShipping({ "Surround Sound Equipment": 499.99 }));
+//
+//const programming = { languages: ["JavaScript", "Python", "Ruby"], isChallenging: true, isRewarding: true, difficulty:
+console.log("ex 5");
+const programming = {
+  languages: ["JavaScript", "Python", "Ruby"],
+  isChallenging: true,
+  isRewarding: true,
+  difficulty: 8,
+  jokes:
+    "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke"
+};
+//Write the command to add the language "Go" to the end of the languages array.
+programming.languages.push("Go");
+// Change the difficulty to the value of 7.
+programming.difficulty = 7;
+
+// Using the delete keyword, write the command to remove the jokes key from the programming object.(need Google)
+delete programming.jokes;
+// Write a command to add a new key called isFun and a value of true to the programming object.
+programming.isFun = true;
+programming["isFun"] = true;
+// Using a loop, iterate through the languages array and console.log all of the languages.
+let array = programming.languages; //ref
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+// Using a loop, console.log all of the keys in the programming object.
+//let programmingKeys = Object.keys(programming);
+
+Bonus: for (let key in programming) {
+  console.log(key);
+}
+// Using a loop, console.log all of the values in the programming object.
+for (let key in programming) {
+  console.log(programming[key]);
+}
+// Create an object method where if the keys "isChallenging" and "isRewarding" have values of "true", then return "Learning the programming languages: "JavaScript, Python, Ruby, Go" is rewarding and challenging.
+programming.isTrue = function() {
+  if (this.isChallenging && this.isRewarding) {
+    return `Learning the programming languages ${this.languages} is rewarding and challenging`;
+  } else {
+    return `Sorry something went wrong`;
+  }
+};
+console.log(programming.isTrue());
+///
