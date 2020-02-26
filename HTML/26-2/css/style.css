@@ -1,0 +1,110 @@
+body {
+  /* background-image: url(../image/tree.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Open Sans";
+
+  font-family: "Trade Winds";
+}
+@font-face {
+  src: url(../);
+}
+.borussia-img {
+  width: 500px;
+  height: 50;
+  border: 2px black solid;
+  border-top: 3px saddlebrown dashed;
+
+  background: yellow;
+  margin: 100px;
+  /*padding: 10px 10px 20px 10px;*/
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  border-color: red;
+  border-style: dotted solid;
+  border-radius: 5%;
+}
+h1,
+h4,
+p,
+div {
+  color: blue;
+}
+h1 {
+  font-size: 50px;
+}
+.sq {
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+  border: 2px black solid;
+}
+.ci {
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+  border: 2px black solid;
+  border-radius: 50%;
+}
+.an {
+  width: 50px;
+  height: 100px;
+  background-color: brown;
+  border: 2px black solid;
+}
+.tra {
+  width: 0;
+  height: 0;
+  border-top: 50px solid;
+  border-bottom: 0px solid;
+  border-right: 40px solid red;
+}
+.sq6 {
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  background-color: green;
+  border: 2px black solid;
+}
+.sq7 {
+  width: 25px;
+  height: 50px;
+  background-color: orange;
+  border: 2px green solid;
+  border-radius: 50%;
+}
+.test-box {
+  width: 50%;
+  height: 34px;
+  border: 2px black solid;
+}
+.random-text {
+  letter-spacing: 2px;
+  word-spacing: 50px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+p:last-child {
+  background-color: gray;
+}
+p:only-child {
+  background-color: crimson;
+}
+.move {
+  width: 800px;
+  height: 500px;
+  background-color: yellow;
+  border: 10px red dotted;
+}
+.move:hover {
+  width: 800px;
+  height: 800px;
+
+  box-shadow: 3px 3px 3px 3px gray;
+}
