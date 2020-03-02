@@ -1,0 +1,131 @@
+/* CSS selectors */
+
+/* Element selector */
+html {
+  font-size: 16px;
+  margin: 0;
+}
+/* #ID selector */
+#random-text {
+  color: teal;
+}
+/* .class selector */
+.main-page {
+  background-color: yellow;
+}
+/* element,element Selector
+element  AND element 
+*/
+span,
+div {
+  background-color: turquoise;
+}
+/* element element Selector
+element inside element 
+*/
+div p {
+  color: firebrick;
+}
+/* element>element	 Selector  
+element parent element */
+div > p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: orange;
+}
+
+/* element+element  Selector
+element immediately after element */
+div + span {
+  color: orchid;
+}
+
+/* element1~element2 Selector 
+element preceded element */
+span ~ p {
+  color: peachpuff;
+}
+
+/* [attribute] Selector */
+[name] {
+  background-color: lightgray;
+}
+/* [attribute=value] Selector  */
+[type="submit"] {
+  background-color: tomato;
+}
+/* [attribute~=value] Selector
+containing the value */
+[alt~="aleppo"] {
+  width: 500px;
+  border: 2px #000 solid;
+}
+/* [attribute^=value] Selector
+begins with the value */
+[alt^="aleppo"] {
+  border: 2px #000 solid;
+  border-radius: 20%;
+}
+/* [attribute$=value] Selector
+value ends with  */
+[alt$="aleppo"] {
+  padding: 5px;
+}
+/* [attribute*=value] Selector
+contains the substring */
+[class*="text"] {
+  font-size: 1rem;
+  width: 900px;
+  height: 100px;
+}
+/* pseudo class  */
+/* :hover */
+[class*="text"]:hover {
+  background-color: olive;
+}
+/* :visited */
+a:visited {
+  color: red;
+}
+/*:focus*/
+input:focus {
+  outline: none;
+  border: 2px pink solid;
+  box-shadow: 5px 5px 5px #ccc;
+}
+input[name="firstName"] + span {
+  color: red;
+}
+/*active*/
+a:active {
+  background-color: plum;
+  border-radius: 50%;
+}
+/*checked*/
+input.checked {
+  width: 20x;
+  background-color: sandybrown;
+}
+/* :nth-child() */
+
+/* ::after*/
+div[class="text-main"]::after {
+  content: "Yaman";
+}
+div[class="text-main"]::before {
+  content: "Hi";
+}
+/*target*/
+:target {
+  border: 3px black dashed;
+}
+/*  :nth-child() */
+tr:nth-child(2n + 1) {
+  background-color: darkred;
+}
+tr:nth-child(1n) {
+  background-color: blue;
+  color: white;
+}
+tr:nth-last-child(1) {
+  background-color: saddlebrown;
+}
