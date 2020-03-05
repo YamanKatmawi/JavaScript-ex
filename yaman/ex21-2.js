@@ -39,4 +39,5 @@ const myConcat = (arr1, arr2) => arr1.concat(arr2);
 console.log(myConcat([1, 2], [3, 4, 5])); // here the console and the answer [1,2,3,4,5];
 ///
 const myText = (arr3, arr4) => arr3.concat(arr4);
-console.log(myText([6, 8, 7], [5, 67, 5]));
+console.log(myText([6, 8, 7], [5, 67, 5])); //here the console and the answer [6,8,7,5,67,5];
+//

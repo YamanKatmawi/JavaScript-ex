@@ -25,7 +25,7 @@ function isWaldoHere(waldo) {
     return;
   }
 }
-console.log(isWaldoHere);
+console.log(isWaldoHere());
 //--------------------
 function isWaldoHere() {
   return Object.keys(waldohgjhgjhghjghj).length == 0;

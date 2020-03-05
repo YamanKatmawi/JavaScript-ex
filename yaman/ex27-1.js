@@ -88,7 +88,8 @@ div2(14, 2);
 // Create a function named printFavoriteFruit.
 // Declare a variable outside of the function and store your favorite fruit as a value. Reassign the variable within the function and print “My favorite fruit is: x”.
 // 3. Multiply a Number by Itself
-// Create a function named exponent that takes two numbers as parameters. The second parameter defines how many times the first number should be multiplied by itself. Save the output in a variable named result.
+// Create a function named exponent that takes two numbers as parameters. The second parameter defines how many times the first number should be multiplied by itself.
+// Save the output in a variable named result.
 // Then, try to access the variable result outside of the exponent function. Is this possible? Why/Why not? Comment your answer in the index.js file.
 function printValue(x, y) {
   if (typeof x == "number" && typeof y == "number") {

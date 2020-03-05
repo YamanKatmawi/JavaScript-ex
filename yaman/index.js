@@ -72,8 +72,12 @@ createGrid(3, "*");
 
 // ["smarter", "kinder", "sweeter", "smaller", "clearer"];
 let textArr = ["smart", "kind", "sweet", "small", "clear"];
-function wordConverter() {}
-wordConverter();
+function wordConverter(arr) {
+  for(let i=0;i<arr.length;i++){
+    
+  }
+}
+wordConverter(textArr);
 /////
 //Create a function called "calculateHours" which calculate how many hours (total) this person worked in the week
 //basedon the data structure hourTracking below. Note: start is always morning time, end is always afternoon
@@ -195,4 +199,4 @@ console.log("hey there");
 //     console.log("false");
 //   }
 // }
-// validPin(1, 1234);
+// // validPin(1, 1234)
